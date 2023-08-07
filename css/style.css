@@ -1,0 +1,881 @@
+/*!------ FUENTE -------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@800;900&display=swap');
+
+
+/*!------RESET-------*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/*!------BODY------*/
+
+
+/*!------HEADER------*/
+
+a{
+    text-decoration: none;
+}
+
+.barra-nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+header nav{
+    background-color: #e40000;
+}
+
+.navbar{
+    padding: 0.15vw;
+}
+
+.navbar .navbar-expand-lg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e40000;
+    width: 100%;
+}
+
+.navbar-brand{
+    color:white;
+    font-size: 4vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    text-decoration: none;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.collapse{
+    color: white;
+}
+
+.navbar-collapse{
+    flex-grow: unset;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25vw;
+}
+
+.navbar-toggler{
+    border: unset;
+    color: unset;
+    width: 5vw;
+    height: 5vw;
+    padding: unset;
+}
+
+.navbar-toggler-icon{
+    width: 4vw;
+    height: 4vw;
+    vertical-align: unset;
+}
+
+.navbar-collapse .collapse {
+    color: white;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    color: unset;
+}
+
+.nav-item{
+    padding: 0.1vw 1.5vw 0.1vw 1.5vw;
+}
+
+.nav-link{
+    padding: unset;
+}
+
+/*!----- MAIN-------*/
+
+
+/*!------CAROUSEL------*/
+
+
+/*!------RUBROS------*/
+.rubros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.rubros div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 22vw;
+    border: 0.1vw black solid;
+    border-radius: 0.5vw;
+    margin: 0.5vw;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.rubros div h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 4vw;
+    background-color: #ececec38;
+    margin: 0.5vw;
+}
+
+.rubros div p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    text-align: center;
+    background-color: #ececec38;
+    margin: 0.5vw;
+}
+
+
+/*!------PRODUCTOS DESTACADOS------*/
+
+.productos-des h2{
+    background-color: #e40000;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    border: 0.1vw black solid;
+    border-radius: 0.5vw;
+    margin: 0.35vw;
+    padding: 0.35vw 1.05vw 0.35vw;
+}
+
+.productos-des div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productos-des div div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #59614d;
+    width: 17vw;
+    height: 35vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    margin: 1vw;
+    box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+-webkit-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+-moz-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+}
+
+.productos-des div div img{
+    width: 17vw;
+    height: 20vw;
+    border-radius: 0.5vw 0.5vw 0px 0px;
+}
+
+.productos-des div div h3{
+    font-size: 1.25vw;
+    margin: 2vw;
+    text-decoration: underline;
+}
+
+.productos-des div div a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid 1px black;
+    background-color: #e40000;
+    color: white;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+}
+
+.productos-des div div a:hover{
+    background-color: white;
+    color: #59614d;
+}
+
+/*!------ALIANZAS COMERCIALES------*/
+.alianzas h2{
+    background-color: #e40000;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    border: 0.1vw black solid;
+    border-radius: 0.5vw;
+    margin: 0.35vw;
+    padding: 0.35vw 1.05vw 0.35vw;
+}
+
+.alianzas div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.5vw;
+}
+
+.alianzas div img{
+    width: 12vw;
+    height: 4vw;
+    margin: 1vw;
+    border: solid 0.25vw white;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+/*!------MAIN HISTORIA-------*/
+
+.nuestra-his{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nuestra-his h2{
+    font-size: 2vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    margin: 1vw;
+}
+
+.nuestra-his section h3{
+    font-size: 2vw;
+    margin: 3vw 0vw 1vw 3vw;
+}
+
+.nuestra-his section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0vw 2vw 1vw 2vw;
+}
+
+.nuestra-his section div div .div-ferret{
+    display: flex;
+    flex-direction: column;
+}
+
+.nuestra-his section div p{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+.nuestra-his section div div .narciso{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 0.5vw;
+}
+
+.nuestra-his section div div img{
+    width: 50vw;
+    height: 20vw;
+    border-radius: 0.5vw;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+
+/*!------MAIN MAT-CONSTR-----*/
+
+.ferreteria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30vw;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+.ferreteria .prod-mat img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.estufa{
+    grid-row: span 2;
+}
+
+.estufas-varias{
+    grid-row: span 2;
+}
+
+
+/*!------MAIN AGROINDUSTRIAL-----*/
+
+.agroindustria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30vw;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+.agroindustria .prod-agro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.bebederos-25-60-180{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.com-feed{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.tubos-alc{
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+
+/*!------MAIN CONTACTO-------*/
+
+.globos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
+    border-radius: 1vw;
+    width: 40%;
+    height: 90%;
+    margin: 2vw;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos h2{
+    font-size: 2vw;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    margin: 1vw;
+}
+
+.contactos .globos form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+
+.globos form div label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.globos form div h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.contactos .globos form div input{
+    border: solid black 0.1vw;
+    border-radius: 0.5vw;
+    width: 20vw;
+    height: 2vw;
+    padding-left: 0.5vw;
+}
+
+.contactos .globos form div select{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    border: solid black 0.1vw;
+    border-radius: 0.5vw;
+    width: 20vw;
+    height: 2vw;
+}
+
+.contactos .globos form div select option{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+}
+
+.contactos .globos form div textarea{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 25vw;
+    height: 10vw;
+    padding: 0.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+}
+
+.contactos .globos form div .botones{
+    background-color: #e40000;
+    color: white;
+    margin: 0.5vw;
+    border: solid 1px black;
+    width: 10vw;
+    height: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25vw;
+}
+
+.contactos .globos form div .botones:active{
+    background-color: #59614d;
+    color: white;
+}
+
+/*!------FOOTER------*/
+
+.pie-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: #797979b7;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foot-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mapa{
+    margin: 1.5vw;
+    width: 12vw;
+    height: 12vw;
+    border: solid black 1vw;
+    border-radius: 1vw;
+}
+
+body .pie-grid .foot-cont .pie-prod .pie-prod-item a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+}
+
+body .pie-grid .foot-cont .foot-nav .foot-nav-item a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+}
+
+body footer div ul li{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+body footer div ul li a{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25vw 0.5vw 0.25vw 0.5vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+
+.pie-prod-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*!------MEDIA QUERIES------*/
+
+@media screen and (max-width: 991px){
+    .barra-nav{
+        position: static;
+    }
+    
+    /*!------INDEX------*/
+
+    main .productos-des h2{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    main .productos-des div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    main .productos-des div div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .alianzas h2{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    main .alianzas div{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        justify-items: center;
+    }
+
+    /*!------NOSOTROS------*/
+
+    .nuestra-his h2{
+        font-size: 3vw;
+    }
+
+    .nuestra-his section h3{
+        font-size: 3vw;
+    }
+
+    .nuestra-his section div p{
+        font-size: 2vw;
+    }
+
+    .nuestra-his .hist-prem{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuestra-his .hist-prem p{
+        font-size: 2vw;
+    }
+
+    .nuestra-his section div .hist-ferr{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nuestra-his section .hist-nues{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*!------CONSTRUCCION------*/
+
+    .ferreteria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 60vw;
+    }
+
+    .ferreteria .prod-mat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ferreteria .prod-mat img{
+        border-radius: 1vw;
+        object-fit: cover;
+    }
+
+    .estufas-varias{
+        grid-row: unset;
+    }
+
+    .estufa{
+        grid-row: unset;
+    }
+
+    /*!------AGROINDUSTRIA------*/
+
+    .agroindustria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 46vw;
+    }
+
+    .agroindustria .prod-agro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .agroindustria .prod-agro img{
+        border-radius: 1vw;
+        object-fit: contain;
+    }
+
+    .bebederos-25-60-180{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    
+    .com-feed{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    
+    .tubos-alc{
+        grid-row: unset;
+        grid-column: unset;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .barra-nav{
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+    .barra-nav h1{
+        padding: 0px;
+    }
+
+    .barra-nav h1 a{
+        font-size: 8vw;
+    }
+
+    .barra-nav nav ul li{
+        padding: 0px;
+        margin: 0vw 1vw 0vw 1vw;
+    }
+
+    .barra-nav nav ul li a{
+        font-size: 2.5vw;
+    }
+
+    /*!------IND------*/
+
+    main .carrousell{
+        display: none;
+    }
+
+    main .rubros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    main .rubros div{
+        margin: 0.25vw;
+        width: 50vwvw;
+        height: 11vw;
+        box-shadow: none
+    }
+
+    main .rubros div h2{
+        font-size: 3vw;
+    }
+
+    main .rubros div p{
+        font-size: 2.5vw;
+    }
+
+    main .productos-des h2{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    main .productos-des div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: (3,1fr);
+        justify-items: center;
+    }
+
+    .taladro{
+        grid-column: span 2;
+    }
+
+    main .productos-des div div{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        height: 45vw;
+    }
+
+    main .productos-des div div img{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    main .productos-des div div h3{
+        font-size: 3vw;
+    }
+
+    main .productos-des div div a{
+        font-size: 2.5vw;
+    }
+
+    main .alianzas{
+        display: none;
+    }
+
+    /*!------NOSOTROS------*/
+
+    .nuestra-his h2{
+        font-size: 4vw;
+    }
+
+    .nuestra-his section h3{
+        font-size: 4vw;
+    }
+
+    .nuestra-his section div p{
+        font-size: 2vw;
+    }
+
+    .nuestra-his .hist-prem{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuestra-his .hist-prem p{
+        font-size: 2vw;
+    }
+
+    .nuestra-his section div .hist-ferr{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nuestra-his section .hist-nues{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*!------MAT CONSTR------*/
+
+    .ferreteria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ferreteria .prod-mat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ferreteria .prod-mat img{
+        width: 60%;
+        height: 70%;
+        border-radius: 1vw;
+        object-fit: contain;
+    }
+
+    /*!------AGROINDUSTRIA------*/
+
+    .agroindustria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agroindustria .prod-agro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .agroindustria .prod-agro img{
+        width: 60%;
+        height: 70%;
+        border-radius: 1vw;
+        object-fit: cover;
+    }
+
+    /*!------CONTACTOS------*/
+
+    .globos{
+        width: 50vw;
+        height: 65vw;
+    }
+
+    .contactos .globos form div input{
+        width: 30vw;
+        height: 3vw;
+    }
+
+    .contactos .globos form div select{
+        width: 30vw;
+        height: 3vw;
+    }
+
+    .contactos .globos form div textarea{
+        width: 30vw;
+        height: 10vw;
+    }
+
+    /*!------FOOTER------*/
+
+    .pie-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pie-grid .foot-cont .mapa{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .pie-grid .foot-cont .foot-nav{
+        display: none;
+    }
+    .pie-grid .foot-cont .pie-prod{
+        display: none;
+    }
+
+    .pie-grid .foot-cont ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pie-grid .foot-cont ul li a{
+        width: 4vw;
+        height: 4vw;
+    }
+
+}
