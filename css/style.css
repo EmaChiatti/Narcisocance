@@ -1,7 +1,6 @@
 /*!------ FUENTE -------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@800;900&display=swap');
 
-
 /*!------RESET-------*/
 *{
     margin: 0;
@@ -9,10 +8,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
-
-/*!------BODY------*/
-
 
 /*!------HEADER------*/
 
@@ -103,12 +98,6 @@ header nav{
     padding: unset;
 }
 
-/*!----- MAIN-------*/
-
-
-/*!------CAROUSEL------*/
-
-
 /*!------RUBROS------*/
 .rubros {
     display: flex;
@@ -146,7 +135,6 @@ header nav{
     text-align: center;
     margin: 0.5vw;
 }
-
 
 /*!------PRODUCTOS DESTACADOS------*/
 
@@ -293,7 +281,6 @@ header nav{
 -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
 }
 
-
 /*!------MAIN MAT-CONSTR-----*/
 
 .ferreteria{
@@ -322,7 +309,6 @@ header nav{
 .estufas-varias{
     grid-row: span 2;
 }
-
 
 /*!------MAIN AGROINDUSTRIAL-----*/
 
@@ -359,7 +345,6 @@ header nav{
     grid-row: span 3;
     grid-column: span 3;
 }
-
 
 /*!------MAIN CONTACTO-------*/
 
@@ -512,14 +497,11 @@ body footer div ul li a{
     height: 2vw;
 }
 
-
 .pie-prod-item{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 /*!------MEDIA QUERIES------*/
 
@@ -653,7 +635,6 @@ body footer div ul li a{
         grid-row: unset;
         grid-column: unset;
     }
-
 }
 
 @media screen and (max-width: 480px){
@@ -863,6 +844,7 @@ body footer div ul li a{
     .pie-grid .foot-cont .foot-nav{
         display: none;
     }
+    
     .pie-grid .foot-cont .pie-prod{
         display: none;
     }
@@ -876,5 +858,4 @@ body footer div ul li a{
         width: 4vw;
         height: 4vw;
     }
-
 }
