@@ -1,0 +1,71 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e40000;
+    .navbar{
+        padding: 0.15vw;
+    }
+    .navbar .navbar-expand-lg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e40000;
+        width: 100%;
+    }
+        div{
+            h1{
+                margin: 0px;
+                .navbar-brand{
+                    color:white;
+                    font-size: 4vw;
+                    font-family: 'Roboto Slab', serif;
+                    font-weight: 800;
+                    text-decoration: none;
+                    margin: 0px;
+                    padding-top: 0.25vw;
+                    padding-bottom: 0.25vw;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+            .navbar-toggler{
+                border: unset;
+                color: unset;
+                width: 5vw;
+                height: 5vw;
+                padding: unset;
+                .navbar-toggler-icon{
+                    width: 4vw;
+                    height: 4vw;
+                    vertical-align: unset;
+                }
+            }
+            .collapse{
+                color: white;
+            }
+            .navbar-collapse{
+                flex-grow: unset;
+            }
+            div{
+                .navbar-nav{
+                    display: flex;
+                    flex-direction: row;
+                    color: unset;
+                    .nav-item{
+                        padding: 0.1vw 1.5vw 0.1vw 1.5vw;
+                        .nav-link{
+                            padding: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

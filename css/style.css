@@ -15,7 +15,7 @@ a{
     text-decoration: none;
 }
 
-.barra-nav{
+header{
     width: 100%;
     position: sticky;
     top: 0;
@@ -23,14 +23,17 @@ a{
 }
 
 header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e40000;
 }
 
-.navbar{
+header .navbar{
     padding: 0.15vw;
 }
 
-.navbar .navbar-expand-lg{
+header .navbar .navbar-expand-lg{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,35 +41,32 @@ header nav{
     width: 100%;
 }
 
-.navbar-brand{
+header nav div h1{
+    margin: 0px;
+}
+
+header nav div h1 .navbar-brand{
     color:white;
     font-size: 4vw;
     font-family: 'Roboto Slab', serif;
     font-weight: 800;
     text-decoration: none;
+    margin: 0px;
     padding-top: 0.25vw;
     padding-bottom: 0.25vw;
 }
 
-.navbar-brand:hover{
+header nav div h1 .navbar-brand:hover{
     color: white;
 }
 
-.collapse{
-    color: white;
+header nav div button .navbar-toggler-icon{
+    width: 4vw;
+    height: 4vw;
+    vertical-align: unset;
 }
 
-.navbar-collapse{
-    flex-grow: unset;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.25vw;
-}
-
-.navbar-toggler{
+header nav div .navbar-toggler{
     border: unset;
     color: unset;
     width: 5vw;
@@ -74,39 +74,44 @@ header nav{
     padding: unset;
 }
 
-.navbar-toggler-icon{
-    width: 4vw;
-    height: 4vw;
-    vertical-align: unset;
-}
-
-.navbar-collapse .collapse {
+header nav div .collapse{
     color: white;
 }
 
-.navbar-nav{
+header nav div .navbar-collapse{
+    flex-grow: unset;
+}
+
+header nav div div .navbar-nav{
     display: flex;
     flex-direction: row;
     color: unset;
 }
 
-.nav-item{
+header nav div div ul .nav-item{
     padding: 0.1vw 1.5vw 0.1vw 1.5vw;
 }
 
-.nav-link{
+header nav div div ul li .nav-link{
     padding: unset;
 }
 
+/*!------LO PUSE EN GENERALES------*/
+.navbar-nav li .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25vw;
+}
+
 /*!------RUBROS------*/
-.rubros {
+main .rubros {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
 
-.rubros div{
+main .rubros div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,7 +133,7 @@ header nav{
     margin: 0.5vw;
 }
 
-.rubros div p{
+.rubros div a p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 2vw;
@@ -457,13 +462,7 @@ header nav{
     align-items: center;
 }
 
-.foot-nav-item{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.mapa{
+.pie-grid .foot-cont .mapa{
     margin: 1.5vw;
     width: 12vw;
     height: 12vw;
@@ -471,25 +470,33 @@ header nav{
     border-radius: 1vw;
 }
 
-body .pie-grid .foot-cont .pie-prod .pie-prod-item a{
+.pie-grid .foot-cont .foot-nav .foot-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pie-grid .foot-cont .foot-nav .foot-nav-item a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     font-size: 1.3vw;
 }
 
-body .pie-grid .foot-cont .foot-nav .foot-nav-item a{
+.pie-grid .foot-cont .pie-prod .pie-prod-item a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     font-size: 1.3vw;
 }
 
-body footer div ul li{
+
+
+.pie-grid .foot-cont ul li{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
 }
 
-body footer div ul li a{
+.pie-grid .foot-cont ul li a{
     display: flex;
     justify-content: space-between;
     margin: 0.25vw 0.5vw 0.25vw 0.5vw;
@@ -497,7 +504,7 @@ body footer div ul li a{
     height: 2vw;
 }
 
-.pie-prod-item{
+.pie-grid .foot-cont .pie-prod .pie-prod-item{
     display: flex;
     justify-content: center;
     align-items: center;
