@@ -261,20 +261,9 @@ main .rubros div{
     margin: 0vw 2vw 1vw 2vw;
 }
 
-.nuestra-his section div div .div-ferret{
-    display: flex;
-    flex-direction: column;
-}
-
 .nuestra-his section div p{
     font-size: 1.5vw;
     text-align: left;
-}
-
-.nuestra-his section div div .narciso{
-    width: 20vw;
-    height: 20vw;
-    border-radius: 0.5vw;
 }
 
 .nuestra-his section div div img{
@@ -284,6 +273,17 @@ main .rubros div{
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
 -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
 -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
+.nuestra-his section div div .narciso{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 0.5vw;
+}
+
+.nuestra-his section div div .div-ferret{
+    display: flex;
+    flex-direction: column;
 }
 
 /*!------MAIN MAT-CONSTR-----*/
@@ -353,21 +353,6 @@ main .rubros div{
 
 /*!------MAIN CONTACTO-------*/
 
-.globos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid black;
-    border-radius: 1vw;
-    width: 40%;
-    height: 90%;
-    margin: 2vw;
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
--webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-}
-
 .contactos{
     display: flex;
     flex-direction: column;
@@ -382,6 +367,22 @@ main .rubros div{
     margin: 1vw;
 }
 
+.contactos .globos{
+    background-color: #92929281;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
+    border-radius: 1vw;
+    width: 40%;
+    height: 90%;
+    margin: 2vw;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+}
+
 .contactos .globos form div{
     display: flex;
     flex-direction: column;
@@ -390,13 +391,7 @@ main .rubros div{
     margin: 1vw;
 }
 
-.globos form div label{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5vw;
-    font-weight: 700;
-}
-
-.globos form div h3{
+.contactos .globos form div label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
     font-weight: 700;
@@ -408,6 +403,12 @@ main .rubros div{
     width: 20vw;
     height: 2vw;
     padding-left: 0.5vw;
+}
+
+.contactos .globos form div h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
 }
 
 .contactos .globos form div select{
@@ -482,6 +483,12 @@ main .rubros div{
     font-size: 1.3vw;
 }
 
+.pie-grid .foot-cont .pie-prod .pie-prod-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pie-grid .foot-cont .pie-prod .pie-prod-item a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -504,11 +511,7 @@ main .rubros div{
     height: 2vw;
 }
 
-.pie-grid .foot-cont .pie-prod .pie-prod-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /*!------MEDIA QUERIES------*/
 

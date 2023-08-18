@@ -1,3 +1,4 @@
+/*!------RUBROS INDEX-----*/
 .rubros {
     display: flex;
     flex-direction: row;
@@ -32,6 +33,7 @@
         }
     }
 }
+/*!------PRODUC DEST INDEX-----*/
 .productos-des{
     h2{
         background-color: #e40000;
@@ -89,6 +91,7 @@
         }
     }
 }
+/*!------ALIANZAS COM INDEX-----*/
 .alianzas{
     h2{
         background-color: #e40000;
@@ -114,6 +117,195 @@
             box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        }
+    }
+}
+/*!------NOSOTROS-----*/
+.nuestra-his{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h2{
+        font-size: 2vw;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 800;
+        margin: 1vw;
+    }
+    section{
+        h3{
+            font-size: 2vw;
+            margin: 3vw 0vw 1vw 3vw;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0vw 2vw 1vw 2vw;
+            p{
+                font-size: 1.5vw;
+                text-align: left;
+            }
+            div{
+                img{
+                    width: 50vw;
+                    height: 20vw;
+                    border-radius: 0.5vw;
+                    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                }
+                .narciso{
+                    width: 20vw;
+                    height: 20vw;
+                    border-radius: 0.5vw;
+                }
+                .div-ferret{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+/*!------CONSTRUCCION-----*/
+.ferreteria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30vw;
+    gap: 2vw;
+    padding: 2vw;
+    .estufas-varias{
+        grid-row: span 2;
+    }
+    .estufa{
+        grid-row: span 2;
+    }
+    .prod-mat{
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1vw;
+            object-fit: cover;
+            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        }
+    }
+}
+/*!------AGROINDUSTRIA-----*/
+.agroindustria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30vw;
+    gap: 2vw;
+    padding: 2vw;
+    .tubos-alc{
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+    .bebederos-25-60-180{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    .com-feed{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    .prod-agro{
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1vw;
+            object-fit: cover;
+            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        }
+    }
+}
+/*!------CONTACTO-----*/
+.contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 2vw;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 800;
+        margin: 1vw;
+    }
+    .globos{
+        background-color: #92929281;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 1px solid black;
+        border-radius: 1vw;
+        width: 40%;
+        height: 90%;
+        margin: 2vw;
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        form{
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 1vw;
+                label{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1.5vw;
+                    font-weight: 700;
+                }
+                input{
+                    border: solid black 0.1vw;
+                    border-radius: 0.5vw;
+                    width: 20vw;
+                    height: 2vw;
+                    padding-left: 0.5vw;
+                }
+                h3{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1.5vw;
+                    font-weight: 700;
+                }
+                select{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1vw;
+                    border: solid black 0.1vw;
+                    border-radius: 0.5vw;
+                    width: 20vw;
+                    height: 2vw;
+                    option{
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 1vw;
+                    }
+                }
+                textarea{
+                    border: solid 1px black;
+                    border-radius: 10px;
+                    width: 25vw;
+                    height: 10vw;
+                    padding: 0.5vw;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1vw;
+                }
+                .botones{
+                    background-color: #e40000;
+                    color: white;
+                    margin: 0.5vw;
+                    border: solid 1px black;
+                    width: 10vw;
+                    height: 2vw;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1.25vw;
+                }
+            }
         }
     }
 }
