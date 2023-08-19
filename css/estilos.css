@@ -468,81 +468,74 @@ header {
       padding: 0px;
       margin: 0vw 1vw 0vw 1vw; }
   /*!------IND------*/
-  main {
-    /*!------CAROUSEL------*/
-    /*!------RUBROS------*/
-    /*!------PRODUCTOS DESTACA------*/
-    /*!------ALIANZAS------*/
-    /*!------MAT CONSTR------*/
-    /*!------AGROINDUSTRIA------*/ }
-    main .carousel {
-      display: none; }
-    main .rubros {
+  main .carousel {
+    display: none; }
+  main .rubros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .rubros div {
+      margin: 0.25vw;
+      width: 75vw;
+      height: 20vw;
+      box-shadow: none; }
+      main .rubros div h2 {
+        font-size: 5vw; }
+      main .rubros div a p {
+        font-size: 2.5vw; }
+  main .productos-des h2 {
+    text-align: center;
+    font-size: 4vw; }
+  main .productos-des div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3, 1fr;
+    justify-items: center; }
+    main .productos-des div div {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      height: 45vw; }
+      main .productos-des div div img {
+        width: 25vw;
+        height: 25vw; }
+      main .productos-des div div h3 {
+        font-size: 3vw; }
+      main .productos-des div div a {
+        font-size: 2.5vw; }
+    main .productos-des div .taladro {
+      grid-column: span 2; }
+  main .alianzas {
+    display: none; }
+  main .ferreteria {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    main .ferreteria .prod-mat {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      main .rubros div {
-        margin: 0.25vw;
-        width: 75vw;
-        height: 20vw;
-        box-shadow: none; }
-        main .rubros div h2 {
-          font-size: 5vw; }
-        main .rubros div a p {
-          font-size: 2.5vw; }
-    main .productos-des h2 {
-      text-align: center;
-      font-size: 4vw; }
-    main .productos-des div {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 3, 1fr;
-      justify-items: center; }
-      main .productos-des div div {
-        display: flex;
-        flex-direction: column;
-        width: 25vw;
-        height: 45vw; }
-        main .productos-des div div img {
-          width: 25vw;
-          height: 25vw; }
-        main .productos-des div div h3 {
-          font-size: 3vw; }
-        main .productos-des div div a {
-          font-size: 2.5vw; }
-      main .productos-des div .taladro {
-        grid-column: span 2; }
-    main .alianzas {
-      display: none; }
-    main .ferreteria {
-      width: 100%;
+      main .ferreteria .prod-mat img {
+        width: 60%;
+        height: 70%;
+        border-radius: 1vw;
+        object-fit: contain; }
+  main .agroindustria {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    main .agroindustria .prod-agro {
       display: flex;
-      flex-direction: column; }
-      main .ferreteria .prod-mat {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        main .ferreteria .prod-mat img {
-          width: 60%;
-          height: 70%;
-          border-radius: 1vw;
-          object-fit: contain; }
-    main .agroindustria {
-      width: 100%;
-      display: flex;
-      flex-direction: column; }
-      main .agroindustria .prod-agro {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        main .agroindustria .prod-agro img {
-          width: 60%;
-          height: 70%;
-          border-radius: 1vw;
-          object-fit: cover; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .agroindustria .prod-agro img {
+        width: 60%;
+        height: 70%;
+        border-radius: 1vw;
+        object-fit: cover; }
   /*!------NOSOTROS------*/
   h2 {
     font-size: 4vw; }

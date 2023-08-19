@@ -134,68 +134,63 @@
     }
     /*!------IND------*/
     main{
-    /*!------CAROUSEL------*/
-        .carousel{
-            display: none;
-        }
-        /*!------RUBROS------*/
-        .rubros{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            div{
-                margin: 0.25vw;
-                width: 75vw;
-                height: 20vw;
-                box-shadow: none;
-                h2{
-                    font-size: 5vw;
-                }
-                a{
-                    p{
-                        font-size: 2.5vw;
-                    }
-                }
-            }   
-        }
-    /*!------PRODUCTOS DESTACA------*/
-    .productos-des{
-        h2{
-            text-align: center;
-            font-size: 4vw;
-        }
+    .carousel{
+        display: none;
+    }
+    .rubros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         div{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: (3,1fr);
-            justify-items: center;
-            div{
-                display: flex;
-                flex-direction: column;
-                width: 25vw;
-                height: 45vw;
-                img{
-                    width: 25vw;
-                    height: 25vw;
-                }
-                h3{
-                    font-size: 3vw;
-                }
-                a{
+            margin: 0.25vw;
+            width: 75vw;
+            height: 20vw;
+            box-shadow: none;
+            h2{
+                font-size: 5vw;
+            }
+            a{
+                p{
                     font-size: 2.5vw;
                 }
             }
-            .taladro{
-                grid-column: span 2;
+        }   
+    }
+        .productos-des{
+            h2{
+                text-align: center;
+                font-size: 4vw;
+            }
+            div{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: (3,1fr);
+                justify-items: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    width: 25vw;
+                    height: 45vw;
+                    img{
+                        width: 25vw;
+                        height: 25vw;
+                    }
+                    h3{
+                        font-size: 3vw;
+                    }
+                    a{
+                        font-size: 2.5vw;
+                    }
+                }
+                .taladro{
+                    grid-column: span 2;
+                }
             }
         }
-    }
-    /*!------ALIANZAS------*/
     .alianzas{
         display: none;
     }
-    /*!------MAT CONSTR------*/
     .ferreteria{
     width: 100%;
         display: flex;
@@ -213,7 +208,6 @@
             }
         }
     }
-    /*!------AGROINDUSTRIA------*/
     .agroindustria{
         width: 100%;
         display: flex;
