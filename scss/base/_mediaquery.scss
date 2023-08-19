@@ -1,0 +1,316 @@
+@media screen and (max-width: 991px){
+    .productos-des{
+        h2{
+            text-align: center;
+            font-size: 2.5vw;
+        }
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .alianzas{
+        h2{
+                text-align: center;
+                font-size: 2.5vw;
+        }
+        div{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            justify-items: center;
+        }
+    }
+    .ferreteria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 60vw;
+        .estufas-varias{
+            grid-row: unset;
+        }
+        .estufa{
+            grid-row: unset;
+        }
+        .prod-mat{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-radius: 1vw;
+                object-fit: cover;
+            }
+        }
+    }
+    /*!------AGROINDUSTRIA------*/
+    .agroindustria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 46vw;
+        .tubos-alc{
+            grid-row: unset;
+            grid-column: unset;
+        }
+        .bebederos-25-60-180{
+            grid-row: unset;
+            grid-column: unset;
+        }
+        .com-feed{
+            grid-row: unset;
+            grid-column: unset;
+        }
+        .prod-agro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-radius: 1vw;
+                object-fit: contain;
+            }
+        }
+    }
+    /*!------NOSOTROS------*/
+    .nuestra-his{
+        h2{
+            font-size: 3vw;
+        }
+        section{
+            h3{
+                font-size: 3vw;
+            }
+            div{
+                p{
+                    font-size: 2vw;
+                }
+                .hist-ferr{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+            .hist-prem{
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 2vw;
+                }
+            }
+            .hist-nues{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .barra-nav{
+        display: flex;
+        flex-direction: column;
+        position: static;
+        nav{
+            div{
+                h1{
+                    padding: 0px;
+                    a{
+                        font-size: 8vw;
+                    }
+                }
+                div{
+                    ul{
+                        li{
+                            padding: 0px;
+                            margin: 0vw 1vw 0vw 1vw;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    /*!------IND------*/
+    main{
+    /*!------CAROUSEL------*/
+        .carousel{
+            display: none;
+        }
+        /*!------RUBROS------*/
+        .rubros{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                margin: 0.25vw;
+                width: 75vw;
+                height: 20vw;
+                box-shadow: none;
+                h2{
+                    font-size: 5vw;
+                }
+                a{
+                    p{
+                        font-size: 2.5vw;
+                    }
+                }
+            }   
+        }
+    /*!------PRODUCTOS DESTACA------*/
+    .productos-des{
+        h2{
+            text-align: center;
+            font-size: 4vw;
+        }
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: (3,1fr);
+            justify-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 25vw;
+                height: 45vw;
+                img{
+                    width: 25vw;
+                    height: 25vw;
+                }
+                h3{
+                    font-size: 3vw;
+                }
+                a{
+                    font-size: 2.5vw;
+                }
+            }
+            .taladro{
+                grid-column: span 2;
+            }
+        }
+    }
+    /*!------ALIANZAS------*/
+    .alianzas{
+        display: none;
+    }
+    /*!------MAT CONSTR------*/
+    .ferreteria{
+    width: 100%;
+        display: flex;
+        flex-direction: column;
+        .prod-mat{
+            display: flex;
+            flex-direction: column;
+        justify-content: center;
+            align-items: center;
+            img{
+            width: 60%;
+            height: 70%;
+                border-radius: 1vw;
+                object-fit: contain;
+            }
+        }
+    }
+    /*!------AGROINDUSTRIA------*/
+    .agroindustria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .prod-agro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 60%;
+                height: 70%;
+                border-radius: 1vw;
+                object-fit: cover;
+            }
+        }
+    }
+}
+/*!------NOSOTROS------*/
+        h2{
+            font-size: 4vw;
+        }
+        section{
+            h3{
+                font-size: 4vw;
+            }
+            div{
+                p{
+                    font-size: 3vw;
+                }
+                .hist-ferr{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .hist-nues{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .hist-prem{
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 3vw;
+                }
+            }
+        }
+        /*!------CONTACTOS------*/
+        .contactos{
+            .globos{
+                width: 50vw;
+                height: 65vw;
+                form{
+                    div{
+                        input{
+                            width: 30vw;
+                            height: 3vw;
+                        }
+                        select{
+                            width: 30vw;
+                            height: 3vw;
+                        }
+                        textarea{
+                            width: 30vw;
+                            height: 10vw;
+                        }
+                    }
+                }
+            }
+        }
+    /*!------FOOTER------*/
+    .pie-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .foot-cont{
+            .mapa{
+                width: 5vw;
+                height: 5vw;
+            }
+            .foot-nav{
+                display: none;
+            }
+            .pie-prod{
+                display: none;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: unset;
+                li{
+                    a{
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}
