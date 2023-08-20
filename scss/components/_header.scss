@@ -7,7 +7,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #e40000;
+        background-color: $color-fondo-nav-titulos-bot;
     .navbar{
         padding: 0.15vw;
     }
@@ -15,14 +15,14 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #e40000;
+        background-color: $color-fondo-nav-titulos-bot;
         width: 100%;
     }
         div{
             h1{
                 margin: 0px;
                 .navbar-brand{
-                    color:white;
+                    color: $color-letras-alt;
                     font-size: 4vw;
                     font-family: 'Roboto Slab', serif;
                     font-weight: 800;
@@ -31,7 +31,7 @@ header {
                     padding-top: 0.25vw;
                     padding-bottom: 0.25vw;
                     &:hover{
-                        color: white;
+                        color: $color-letras-alt;
                     }
                 }
             }
@@ -48,7 +48,7 @@ header {
                 }
             }
             .collapse{
-                color: white;
+                color: $color-letras-alt;
             }
             .navbar-collapse{
                 flex-grow: unset;

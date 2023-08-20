@@ -36,8 +36,8 @@
 /*!------PRODUC DEST INDEX-----*/
 .productos-des{
     h2{
-        background-color: #e40000;
-        color: white;
+        background-color: $color-fondo-nav-titulos-bot;
+        color: $color-letras-alt;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2vw;
         border: 0.1vw black solid;
@@ -54,7 +54,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            background-color: #696969;
+            background-color: $color-tarj-prod;
             width: 17vw;
             height: 35vw;
             text-align: center;
@@ -77,15 +77,15 @@
             a{
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 border: solid 1px black;
-                background-color: #e40000;
-                color: white;
+                background-color: $color-fondo-nav-titulos-bot;
+                color: $color-letras-alt;
                 padding: 0.5vw 1vw 0.5vw 1vw;
                 margin: 1vw;
                 border-radius: 1vw;
                 font-size: 1vw;
                 &:hover{
-                    background-color: white;
-                    color: #59614d;
+                    background-color: $color-letras-alt;
+                    color: $color-tarj-prod;
                 }
             }
         }
@@ -94,8 +94,8 @@
 /*!------ALIANZAS COM INDEX-----*/
 .alianzas{
     h2{
-        background-color: #e40000;
-        color: white;
+        background-color: $color-fondo-nav-titulos-bot;
+        color: $color-letras-alt;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2vw;
         border: 0.1vw black solid;
@@ -237,7 +237,7 @@
         margin: 1vw;
     }
     .globos{
-        background-color: #92929281;
+        background-color: $color-tarj-contac;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -296,8 +296,8 @@
                     font-size: 1vw;
                 }
                 .botones{
-                    background-color: #e40000;
-                    color: white;
+                    background-color: $color-fondo-nav-titulos-bot;
+                    color: $color-letras-alt;
                     margin: 0.5vw;
                     border: solid 1px black;
                     width: 10vw;
