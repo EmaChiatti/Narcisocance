@@ -1,5 +1,16 @@
-/*!------FUENTE -------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@800;900&display=swap");
+.rubros div, .contactos, .contactos .globos form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header nav, header nav .navbar .navbar-expand-lg, .productos-des div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/*!------FUENTE -------*/
 /*!------RESET-------*/
 * {
   margin: 0;
@@ -12,13 +23,13 @@ a {
 
 .navbar-nav li .nav-link.active, .navbar-nav .nav-link.show {
   color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.25vw; }
 
 @media screen and (max-width: 480px) {
   .navbar-nav li .nav-link.active, .navbar-nav .nav-link.show {
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 2.5vw; } }
 
 header {
@@ -27,16 +38,10 @@ header {
   top: 0;
   z-index: 3; }
   header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #e40000; }
     header nav .navbar {
       padding: 0.15vw; }
     header nav .navbar .navbar-expand-lg {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       background-color: #e40000;
       width: 100%; }
     header nav div h1 {
@@ -44,7 +49,7 @@ header {
       header nav div h1 .navbar-brand {
         color: white;
         font-size: 4vw;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
         font-weight: 800;
         text-decoration: none;
         margin: 0px;
@@ -81,25 +86,21 @@ header {
   flex-direction: row;
   justify-content: space-between; }
   .rubros div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 50vw;
     height: 22vw;
-    border: 0.1vw black solid;
-    border-radius: 0.5vw;
+    border: 1px solid black;
+    border-radius: 1vw;
     margin: 0.5vw;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
     .rubros div h2 {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: black;
       font-size: 4vw;
       margin: 0.5vw; }
     .rubros div a p {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: black;
       font-size: 2vw;
       text-align: center;
@@ -109,10 +110,10 @@ header {
 .productos-des h2 {
   background-color: #e40000;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2vw;
-  border: 0.1vw black solid;
-  border-radius: 0.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
   margin: 0.35vw;
   padding: 0.35vw 1.05vw 0.35vw; }
 
@@ -120,16 +121,13 @@ header {
   display: flex;
   justify-content: space-evenly; }
   .productos-des div div {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     background-color: #696969;
     width: 17vw;
     height: 35vw;
     text-align: center;
-    border-radius: 0.5vw;
+    border-radius: 1vw;
     margin: 1vw;
     box-shadow: 10px 10px 30px -1px rgba(3, 3, 3, 0.56);
     -webkit-box-shadow: 10px 10px 30px -1px rgba(3, 3, 3, 0.56);
@@ -144,8 +142,8 @@ header {
       margin: 2vw;
       text-decoration: underline; }
     .productos-des div div a {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      border: solid 1px black;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      border: 1px solid black;
       background-color: #e40000;
       color: white;
       padding: 0.5vw 1vw 0.5vw 1vw;
@@ -160,10 +158,10 @@ header {
 .alianzas h2 {
   background-color: #e40000;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2vw;
-  border: 0.1vw black solid;
-  border-radius: 0.5vw;
+  border: 1px solid black;
+  border-radius: 1vw;
   margin: 0.35vw;
   padding: 0.35vw 1.05vw 0.35vw; }
 
@@ -184,10 +182,10 @@ header {
 
 /*!------NOSOTROS-----*/
 .nuestra-his {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .nuestra-his h2 {
     font-size: 2vw;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-weight: 800;
     margin: 1vw; }
   .nuestra-his section h3 {
@@ -205,14 +203,14 @@ header {
     .nuestra-his section div div img {
       width: 50vw;
       height: 20vw;
-      border-radius: 0.5vw;
+      border-radius: 1vw;
       box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
       -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
     .nuestra-his section div div .narciso {
       width: 20vw;
       height: 20vw;
-      border-radius: 0.5vw; }
+      border-radius: 1vw; }
     .nuestra-his section div div .div-ferret {
       display: flex;
       flex-direction: column; }
@@ -265,84 +263,77 @@ header {
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
 
 /*!------CONTACTO-----*/
-.contactos {
+.contactos h2 {
+  font-size: 2vw;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  margin: 1vw; }
+
+.contactos .globos {
+  background-color: #92929281;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .contactos h2 {
-    font-size: 2vw;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 800;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px solid black;
+  border-radius: 1vw;
+  width: 40%;
+  height: 90%;
+  margin: 2vw;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
+  .contactos .globos form div {
     margin: 1vw; }
-  .contactos .globos {
-    background-color: #92929281;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 1px solid black;
-    border-radius: 1vw;
-    width: 40%;
-    height: 90%;
-    margin: 2vw;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
-    .contactos .globos form div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 1vw; }
-      .contactos .globos form div label {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.5vw;
-        font-weight: 700; }
-      .contactos .globos form div input {
-        border: solid black 0.1vw;
-        border-radius: 0.5vw;
-        width: 20vw;
-        height: 2vw;
-        padding-left: 0.5vw; }
-      .contactos .globos form div h3 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.5vw;
-        font-weight: 700; }
-      .contactos .globos form div select {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1vw;
-        border: solid black 0.1vw;
-        border-radius: 0.5vw;
-        width: 20vw;
-        height: 2vw; }
-        .contactos .globos form div select option {
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-size: 1vw; }
-      .contactos .globos form div textarea {
-        border: solid 1px black;
-        border-radius: 10px;
-        width: 25vw;
-        height: 10vw;
-        padding: 0.5vw;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .contactos .globos form div label {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 1.5vw;
+      font-weight: 700; }
+    .contactos .globos form div input {
+      border: 1px solid black;
+      border-radius: 1vw;
+      width: 20vw;
+      height: 2vw;
+      padding-left: 0.5vw; }
+    .contactos .globos form div h3 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 1.5vw;
+      font-weight: 700; }
+    .contactos .globos form div select {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 1vw;
+      border: 1px solid black;
+      border-radius: 1vw;
+      width: 20vw;
+      height: 2vw; }
+      .contactos .globos form div select option {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         font-size: 1vw; }
-      .contactos .globos form div .botones {
-        background-color: #e40000;
-        color: white;
-        margin: 0.5vw;
-        border: solid 1px black;
-        width: 10vw;
-        height: 2vw;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25vw; }
+    .contactos .globos form div textarea {
+      border: 1px solid black;
+      border-radius: 1vw;
+      width: 25vw;
+      height: 10vw;
+      padding: 0.5vw;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 1vw; }
+    .contactos .globos form div .botones {
+      background-color: #e40000;
+      color: white;
+      margin: 0.5vw;
+      border: 1px solid black;
+      border-radius: 1vw;
+      width: 10vw;
+      height: 2vw;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 1.25vw; }
 
 .pie-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   background-color: #797979b7;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.3vw;
   justify-content: space-evenly;
   align-items: center; }
@@ -350,14 +341,14 @@ header {
     margin: 1.5vw;
     width: 12vw;
     height: 12vw;
-    border: solid black 1vw;
+    border: 1px solid black;
     border-radius: 1vw; }
   .pie-grid .foot-cont .foot-nav .foot-nav-item {
     display: flex;
     justify-content: center;
     align-items: flex-start; }
     .pie-grid .foot-cont .foot-nav .foot-nav-item a {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: white;
       font-size: 1.3vw; }
   .pie-grid .foot-cont .pie-prod .pie-prod-item {
@@ -365,7 +356,7 @@ header {
     justify-content: center;
     align-items: center; }
     .pie-grid .foot-cont .pie-prod .pie-prod-item a {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: white;
       font-size: 1.3vw; }
   .pie-grid .foot-cont ul li {
@@ -555,18 +546,30 @@ header {
     section .hist-prem p {
       font-size: 3vw; }
   /*!------CONTACTOS------*/
+  .contactos h2 {
+    font-size: 4vw; }
   .contactos .globos {
-    width: 50vw;
-    height: 65vw; }
+    width: 70vw;
+    height: 75vh; }
+    .contactos .globos form div label {
+      font-size: 3vw; }
     .contactos .globos form div input {
-      width: 30vw;
-      height: 3vw; }
+      width: 60vw;
+      height: 6vw; }
+    .contactos .globos form div h3 {
+      font-size: 3vw; }
     .contactos .globos form div select {
-      width: 30vw;
-      height: 3vw; }
+      font-size: 3vw;
+      width: 60vw;
+      height: 6vw; }
     .contactos .globos form div textarea {
-      width: 30vw;
-      height: 10vw; }
+      width: 60vw;
+      height: 20vw;
+      font-size: 3vw; }
+    .contactos .globos form div .botones {
+      width: 20vw;
+      height: 4vw;
+      font-size: 2.5vw; }
   /*!------FOOTER------*/
   .pie-grid {
     display: flex;

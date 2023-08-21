@@ -4,17 +4,13 @@ header {
     top: 0;
     z-index: 3;
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-2;
         background-color: $color-fondo-nav-titulos-bot;
     .navbar{
         padding: 0.15vw;
     }
     .navbar .navbar-expand-lg{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-2;
         background-color: $color-fondo-nav-titulos-bot;
         width: 100%;
     }
@@ -23,8 +19,8 @@ header {
                 margin: 0px;
                 .navbar-brand{
                     color: $color-letras-alt;
-                    font-size: 4vw;
-                    font-family: 'Roboto Slab', serif;
+                    font-size: nth($font-size, 8);
+                    font-family: $font-fam-empr;
                     font-weight: 800;
                     text-decoration: none;
                     margin: 0px;

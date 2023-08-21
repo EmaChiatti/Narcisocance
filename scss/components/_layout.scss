@@ -4,29 +4,26 @@
     flex-direction: row;
     justify-content: space-between;
     div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         width: 50vw;
         height: 22vw;
-        border: 0.1vw black solid;
-        border-radius: 0.5vw;
+        border: map-get($bordes, border);
+        border-radius: map-get($bordes, radius);
         margin: 0.5vw;
         box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         h2{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: $font-fam-gral;
             color: rgb(0, 0, 0);
-            font-size: 4vw;
+            font-size: nth($font-size, 8);
             margin: 0.5vw;
         }
         a{
             p{
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: $font-fam-gral;
                 color: rgb(0, 0, 0);
-                font-size: 2vw;
+                font-size: nth($font-size, 5);
                 text-align: center;
                 margin: 0.5vw;
             }
@@ -38,10 +35,10 @@
     h2{
         background-color: $color-fondo-nav-titulos-bot;
         color: $color-letras-alt;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 2vw;
-        border: 0.1vw black solid;
-        border-radius: 0.5vw;
+        font-family: $font-fam-gral;
+        font-size: nth($font-size, 5);
+        border: map-get($bordes, border);
+        border-radius: map-get($bordes, radius);
         margin: 0.35vw;
         padding: 0.35vw 1.05vw 0.35vw;
     }
@@ -49,16 +46,14 @@
         display: flex;
         justify-content: space-evenly;
         div{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            display: flex;
+            font-family: $font-fam-gral;
+            @extend %flex-2;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             background-color: $color-tarj-prod;
             width: 17vw;
             height: 35vw;
             text-align: center;
-            border-radius: 0.5vw;
+            border-radius: map-get($bordes, radius);
             margin: 1vw;
             box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
             -webkit-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
@@ -69,20 +64,20 @@
                 border-radius: 0.5vw 0.5vw 0px 0px;
             }
             h3{
-                font-size: 1.25vw;
+                font-size: nth($font-size, 2);
                 color: black;
                 margin: 2vw;
                 text-decoration: underline;
             }
             a{
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                border: solid 1px black;
+                font-family: $font-fam-gral;
+                border: map-get($bordes, border);
                 background-color: $color-fondo-nav-titulos-bot;
                 color: $color-letras-alt;
                 padding: 0.5vw 1vw 0.5vw 1vw;
                 margin: 1vw;
-                border-radius: 1vw;
-                font-size: 1vw;
+                border-radius: map-get($bordes, radius);
+                font-size: nth($font-size, 1);
                 &:hover{
                     background-color: $color-letras-alt;
                     color: $color-tarj-prod;
@@ -96,10 +91,10 @@
     h2{
         background-color: $color-fondo-nav-titulos-bot;
         color: $color-letras-alt;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 2vw;
-        border: 0.1vw black solid;
-        border-radius: 0.5vw;
+        font-family: $font-fam-gral;
+        font-size: nth($font-size, 5);
+        border: map-get($bordes, border);
+        border-radius: map-get($bordes, radius);
         margin: 0.35vw;
         padding: 0.35vw 1.05vw 0.35vw;
     }
@@ -122,33 +117,30 @@
 }
 /*!------NOSOTROS-----*/
 .nuestra-his{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font-fam-gral;
     h2{
-        font-size: 2vw;
-        font-family: 'Roboto Slab', serif;
+        font-size: nth($font-size, 5);
+        font-family: $font-fam-empr;
         font-weight: 800;
         margin: 1vw;
     }
     section{
         h3{
-            font-size: 2vw;
+            font-size: nth($font-size, 5);
             margin: 3vw 0vw 1vw 3vw;
         }
         div{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
+            @include display (flex, row, flex-start, center);
             margin: 0vw 2vw 1vw 2vw;
             p{
-                font-size: 1.5vw;
+                font-size: nth($font-size, 4);
                 text-align: left;
             }
             div{
                 img{
                     width: 50vw;
                     height: 20vw;
-                    border-radius: 0.5vw;
+                    border-radius: map-get($bordes, radius);
                     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
                     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
                     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
@@ -156,7 +148,7 @@
                 .narciso{
                     width: 20vw;
                     height: 20vw;
-                    border-radius: 0.5vw;
+                    border-radius: map-get($bordes, radius);
                 }
                 .div-ferret{
                     display: flex;
@@ -184,7 +176,7 @@
         img{
             width: 100%;
             height: 100%;
-            border-radius: 1vw;
+            border-radius: map-get($bordes, radius);
             object-fit: cover;
             box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
             -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
@@ -216,7 +208,7 @@
         img{
             width: 100%;
             height: 100%;
-            border-radius: 1vw;
+            border-radius: map-get($bordes, radius);;
             object-fit: cover;
             box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
             -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
@@ -226,24 +218,19 @@
 }
 /*!------CONTACTO-----*/
 .contactos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     h2{
-        font-size: 2vw;
-        font-family: 'Roboto Slab', serif;
+        font-size: nth($font-size, 5);
+        font-family: $font-fam-empr;
         font-weight: 800;
         margin: 1vw;
     }
     .globos{
         background-color: $color-tarj-contac;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: 1px solid black;
-        border-radius: 1vw;
+        @include display-2 (flex, center, center);
+        font-family: $font-fam-gral;
+        border: map-get($bordes, border);
+        border-radius: map-get($bordes, radius);
         width: 40%;
         height: 90%;
         margin: 2vw;
@@ -252,58 +239,56 @@
         -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
         form{
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @extend %flex;
                 margin: 1vw;
                 label{
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1.5vw;
+                    font-family: $font-fam-gral;
+                    font-size: nth($font-size, 4);
                     font-weight: 700;
                 }
                 input{
-                    border: solid black 0.1vw;
-                    border-radius: 0.5vw;
+                    border: map-get($bordes, border);
+                    border-radius:map-get($bordes, radius);
                     width: 20vw;
                     height: 2vw;
                     padding-left: 0.5vw;
                 }
                 h3{
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1.5vw;
+                    font-family: $font-fam-gral;
+                    font-size: nth($font-size, 4);
                     font-weight: 700;
                 }
                 select{
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1vw;
-                    border: solid black 0.1vw;
-                    border-radius: 0.5vw;
+                    font-family: $font-fam-gral;
+                    font-size: nth($font-size, 1);
+                    border: map-get($bordes, border);
+                    border-radius: map-get($bordes, radius);
                     width: 20vw;
                     height: 2vw;
                     option{
-                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        font-size: 1vw;
+                        font-family: $font-fam-gral;
+                        font-size: nth($font-size, 1);
                     }
                 }
                 textarea{
-                    border: solid 1px black;
-                    border-radius: 10px;
+                    border: map-get($bordes, border);
+                    border-radius: map-get($bordes, radius);
                     width: 25vw;
                     height: 10vw;
                     padding: 0.5vw;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1vw;
+                    font-family: $font-fam-gral;
+                    font-size: nth($font-size, 1);
                 }
                 .botones{
                     background-color: $color-fondo-nav-titulos-bot;
                     color: $color-letras-alt;
                     margin: 0.5vw;
-                    border: solid 1px black;
+                    border: map-get($bordes, border);
+                    border-radius: map-get($bordes, radius);
                     width: 10vw;
                     height: 2vw;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 1.25vw;
+                    font-family: $font-fam-gral;
+                    font-size: nth($font-size, 2);
                 }
             }
         }

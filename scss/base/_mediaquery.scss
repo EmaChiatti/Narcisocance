@@ -2,7 +2,7 @@
     .productos-des{
         h2{
             text-align: center;
-            font-size: 2.5vw;
+            font-size: nth($font-size, 6);
         }
         div{
             display: grid;
@@ -18,7 +18,7 @@
     .alianzas{
         h2{
             text-align: center;
-            font-size: 2.5vw;
+            font-size: nth($font-size, 6);
         }
         div{
             display: grid;
@@ -37,10 +37,10 @@
             grid-row: unset;
         }
         .prod-mat{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: map-get($distrib, display);
+            flex-direction: map-get($distrib, flex-dir);
+            justify-content: map-get($distrib, just-cont);
+            align-items: map-get($distrib, align-i);
             img{
                 border-radius: 1vw;
                 object-fit: cover;
@@ -65,10 +65,10 @@
             grid-column: unset;
         }
         .prod-agro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: map-get($distrib, display);
+            flex-direction: map-get($distrib, flex-dir);
+            justify-content: map-get($distrib, just-cont);
+            align-items: map-get($distrib, align-i);
             img{
                 border-radius: 1vw;
                 object-fit: contain;
@@ -78,15 +78,15 @@
     /*!------NOSOTROS------*/
     .nuestra-his{
         h2{
-            font-size: 3vw;
+            font-size: nth($font-size, 7);
         }
         section{
             h3{
-                font-size: 3vw;
+                font-size: nth($font-size, 7);
             }
             div{
                 p{
-                    font-size: 2vw;
+                    font-size: nth($font-size, 5);
                 }
                 .hist-ferr{
                     display: flex;
@@ -97,7 +97,7 @@
                 display: flex;
                 flex-direction: column;
                 p{
-                    font-size: 2vw;
+                    font-size: nth($font-size, 5);
                 }
             }
             .hist-nues{
@@ -117,7 +117,7 @@
                 h1{
                     padding: 0px;
                     a{
-                        font-size: 8vw;
+                        font-size: nth($font-size, 10);
                     }
                 }
                 div{
@@ -138,21 +138,21 @@
         display: none;
     }
     .rubros{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: map-get($distrib, display);
+        flex-direction: map-get($distrib, flex-dir);
+        justify-content: map-get($distrib, just-cont);
+        align-items: map-get($distrib, align-i);
         div{
             margin: 0.25vw;
             width: 75vw;
             height: 20vw;
             box-shadow: none;
             h2{
-                font-size: 5vw;
+                font-size: nth($font-size, 9);
             }
             a{
                 p{
-                    font-size: 2.5vw;
+                    font-size: nth($font-size, 6);
                 }
             }
         }   
@@ -177,10 +177,10 @@
                         height: 25vw;
                     }
                     h3{
-                        font-size: 3vw;
+                        font-size: nth($font-size, 7);
                     }
                     a{
-                        font-size: 2.5vw;
+                        font-size: nth($font-size, 6);
                     }
                 }
                 .taladro{
@@ -196,10 +196,10 @@
         display: flex;
         flex-direction: column;
         .prod-mat{
-            display: flex;
-            flex-direction: column;
-        justify-content: center;
-            align-items: center;
+            display: map-get($distrib, display);
+            flex-direction: map-get($distrib, flex-dir);
+            justify-content: map-get($distrib, just-cont);
+            align-items: map-get($distrib, align-i);
             img{
             width: 60%;
             height: 70%;
@@ -213,10 +213,10 @@
         display: flex;
         flex-direction: column;
         .prod-agro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: map-get($distrib, display);
+            flex-direction: map-get($distrib, flex-dir);
+            justify-content: map-get($distrib, just-cont);
+            align-items: map-get($distrib, align-i);
             img{
                 width: 60%;
                 height: 70%;
@@ -228,15 +228,15 @@
 }
 /*!------NOSOTROS------*/
         h2{
-            font-size: 4vw;
+            font-size: nth($font-size, 8);
         }
         section{
             h3{
-                font-size: 4vw;
+                font-size: nth($font-size, 8);
             }
             div{
                 p{
-                    font-size: 3vw;
+                    font-size: nth($font-size, 7);
                 }
                 .hist-ferr{
                     display: flex;
@@ -251,28 +251,44 @@
                 display: flex;
                 flex-direction: column;
                 p{
-                    font-size: 3vw;
+                    font-size: nth($font-size, 7);
                 }
             }
         }
         /*!------CONTACTOS------*/
         .contactos{
+            h2{
+                font-size: nth($font-size, 8);
+            }
             .globos{
-                width: 50vw;
-                height: 65vw;
+                width: 70vw;
+                height: 75vh;
                 form{
                     div{
+                        label{
+                            font-size: nth($font-size, 7);
+                        }
                         input{
-                            width: 30vw;
-                            height: 3vw;
+                            width: 60vw;
+                            height: 6vw;
+                        }
+                        h3{
+                            font-size: nth($font-size, 7);
                         }
                         select{
-                            width: 30vw;
-                            height: 3vw;
+                            font-size: nth($font-size, 7);
+                            width: 60vw;
+                            height: 6vw;
                         }
                         textarea{
-                            width: 30vw;
-                            height: 10vw;
+                            width: 60vw;
+                            height: 20vw;
+                            font-size: nth($font-size, 7);
+                        }
+                        .botones{
+                            width: 20vw;
+                            height: 4vw;
+                            font-size: nth($font-size, 6);
                         }
                     }
                 }

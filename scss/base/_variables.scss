@@ -1,5 +1,69 @@
+//* VARIABLES
+
+//!---COLORES---//
 $color-fondo-nav-titulos-bot: #e40000;
 $color-letras-alt: white;
 $color-fondo-foot: #797979b7;
 $color-tarj-prod:#696969;
 $color-tarj-contac: #92929281;
+
+//!---FUENTES---/
+$font-fam-empr: 'Roboto Slab', serif;
+$font-fam-gral: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+//* LISTAS
+
+$font-size: 1vw, 1.25vw, 1.3vw, 1.5vw, 2vw, 2.5vw, 3vw, 4vw, 5vw, 8vw;
+//* numero    1     2       3     4      5    6     7     8   9    10/
+
+
+
+
+//* MAPAS agrupar una serie de propiedades que le daba estilos a un boton
+
+$bordes:(
+    //KEY / VALUE  
+    border:1px solid black,
+    radius:1vw,
+);
+
+$distrib:(
+    display: flex,
+    flex-dir: column,
+    just-cont:center,
+    align-i: center,
+);
+
+//* EXTENDS son un grupo de propiedades que vamos a poder reutilizar en conjunto, para optimizar.
+// Agrupar una serie de propiedades en las cuales usamos siempre el mismo valor.
+
+%flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//* MIXIN Nos permiten agrupar un paquetes de propiedades con variables o parametros vacios, es decir, le asigno un nombre pero no le pongo nada adentro (el nombre es referencial)
+//* Lo voy a declarar en el momento que lo necesite
+
+@mixin display($flex, $direction, $justify, $align){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display-2($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
