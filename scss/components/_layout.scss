@@ -5,14 +5,18 @@
     justify-content: space-between;
     div{
         @extend %flex;
-        width: 50vw;
+        width: 49vw;
         height: 22vw;
         border: map-get($bordes, border);
         border-radius: map-get($bordes, radius);
         margin: 0.5vw;
-        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+        transition: 1s;
+            &:hover{
+                box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
+                transform: scale(1s);
+            }
         h2{
             font-family: $font-fam-gral;
             color: rgb(0, 0, 0);
@@ -55,12 +59,18 @@
             text-align: center;
             border-radius: map-get($bordes, radius);
             margin: 1vw;
-            box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
-            -webkit-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
-            -moz-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+            transition: 1s;
+                &:hover{
+                    box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+                    -webkit-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+                    -moz-box-shadow: 10px 10px 30px -1px rgba(3,3,3,0.56);
+                    transform: scale(1.025);
+                }
+            
             img{
                 width: 17vw;
                 height: 20vw;
+                border: 1px solid black;
                 border-radius: 0.5vw 0.5vw 0px 0px;
             }
             h3{
@@ -78,9 +88,12 @@
                 margin: 1vw;
                 border-radius: map-get($bordes, radius);
                 font-size: nth($font-size, 1);
+                transition: 1s;
                 &:hover{
                     background-color: $color-letras-alt;
-                    color: $color-tarj-prod;
+                    color: black;
+                    transform: scale(1.2);
+                    font-weight: 800;
                 }
             }
         }
@@ -102,16 +115,17 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin: 1.5vw;
+        margin: 0vw 1.5vw 0vw 1.5vw;
+        padding-bottom: 1.5vw;
         img{
             width: 12vw;
             height: 4vw;
             margin: 1vw;
             border: solid 0.25vw white;
             border-radius: 1vw;
-            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 1vw 0px rgba(0,0,0,0.5);
         }
     }
 }
@@ -122,7 +136,8 @@
         font-size: nth($font-size, 5);
         font-family: $font-fam-empr;
         font-weight: 800;
-        margin: 1vw;
+        margin: 0vw 2vw 0vw 2vw;
+        padding-top: 1vw;
     }
     section{
         h3{
@@ -131,7 +146,8 @@
         }
         div{
             @include display (flex, row, flex-start, center);
-            margin: 0vw 2vw 1vw 2vw;
+            margin: 0vw 2vw 0vw 2vw;
+            padding-bottom: 1vw;
             p{
                 font-size: nth($font-size, 4);
                 text-align: left;
@@ -178,9 +194,13 @@
             height: 100%;
             border-radius: map-get($bordes, radius);
             object-fit: cover;
-            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-            -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.025);
+                box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            }
         }
     }
 }
@@ -210,9 +230,13 @@
             height: 100%;
             border-radius: map-get($bordes, radius);;
             object-fit: cover;
-            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-            -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-            -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.025);
+                box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 
 //!---COLORES---//
 $color-fondo-nav-titulos-bot: #e40000;
+$color-fondos-gral:rgba(245, 245, 245, 0.89);
 $color-letras-alt: white;
 $color-fondo-foot: #797979b7;
 $color-tarj-prod:#696969;
@@ -12,23 +13,21 @@ $font-fam-empr: 'Roboto Slab', serif;
 $font-fam-gral: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
-
 //* LISTAS
 
 $font-size: 1vw, 1.25vw, 1.3vw, 1.5vw, 2vw, 2.5vw, 3vw, 4vw, 5vw, 8vw;
 //* numero    1     2       3     4      5    6     7     8   9    10/
 
 
+//* MAPAS
 
-
-//* MAPAS agrupar una serie de propiedades que le daba estilos a un boton
-
+//!---BORDES---/
 $bordes:(
-    //KEY / VALUE  
     border:1px solid black,
     radius:1vw,
 );
 
+//!---DISTRIBUCION---/
 $distrib:(
     display: flex,
     flex-dir: column,
@@ -36,9 +35,10 @@ $distrib:(
     align-i: center,
 );
 
-//* EXTENDS son un grupo de propiedades que vamos a poder reutilizar en conjunto, para optimizar.
-// Agrupar una serie de propiedades en las cuales usamos siempre el mismo valor.
 
+//* EXTENDS
+
+//!---FLEX 4 COMPONENTES---/
 %flex{
     display: flex;
     flex-direction: column;
@@ -46,15 +46,17 @@ $distrib:(
     align-items: center;
 }
 
+//!---FLEX 3 COMPONENTES---/
 %flex-2{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-//* MIXIN Nos permiten agrupar un paquetes de propiedades con variables o parametros vacios, es decir, le asigno un nombre pero no le pongo nada adentro (el nombre es referencial)
-//* Lo voy a declarar en el momento que lo necesite
 
+//* MIXIN
+
+//!---DISTRIBUCION 4 COMPONENTES---/
 @mixin display($flex, $direction, $justify, $align){
     display: $flex;
     flex-direction: $direction;
@@ -62,6 +64,7 @@ $distrib:(
     align-items: $align;
 }
 
+//!---DISTRIBUCION 3 COMPONENTES---/
 @mixin display-2($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;
