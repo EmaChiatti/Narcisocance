@@ -127,46 +127,47 @@
             }
         }
     }
-}
-        /*!------CONTACTOS------*/
-        .contactos{
-            h2{
-                font-size: nth($font-size, 8);
-            }
-            .globos{
-                width: 70vw;
-                height: 95vw;
-                form{
-                    div{
-                        label{
-                            font-size: nth($font-size, 7);
-                        }
-                        input{
-                            width: 60vw;
-                            height: 6vw;
-                        }
-                        h3{
-                            font-size: nth($font-size, 7);
-                        }
-                        select{
-                            font-size: nth($font-size, 7);
-                            width: 60vw;
-                            height: 6vw;
-                        }
-                        textarea{
-                            width: 60vw;
-                            height: 20vw;
-                            font-size: nth($font-size, 7);
-                        }
-                        .botones{
-                            width: 20vw;
-                            height: 4vw;
-                            font-size: nth($font-size, 6);
-                        }
+    /*!------CONTACTOS------*/
+    .contactos{
+        h2{
+            font-size: nth($font-size, 8);
+        }
+        .globos{
+            width: 60vw;
+            height: 90vw;
+            
+            form{
+                div{
+                    label{
+                        font-size: nth($font-size, 7);
+                    }
+                    input{
+                        width: 50vw;
+                        height: 6vw;
+                    }
+                    h3{
+                        font-size: nth($font-size, 7);
+                    }
+                    select{
+                        font-size: nth($font-size, 7);
+                        width: 50vw;
+                        height: 6vw;
+                    }
+                    textarea{
+                        width: 50vw;
+                        height: 20vw;
+                        font-size: nth($font-size, 7);
+                    }
+                    .botones{
+                        width: 18vw;
+                        height: 4vw;
+                        font-size: nth($font-size, 6);
                     }
                 }
             }
         }
+    }
+}
 @media screen and (max-width: 530px){
     .barra-nav{
         display: flex;
@@ -320,7 +321,7 @@
             }
             .globos{
                 width: 70vw;
-                height: 95vw;
+                height: 100vw;
                 form{
                     div{
                         label{

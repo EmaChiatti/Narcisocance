@@ -289,7 +289,7 @@ header {
 
 /*!------CONTACTO-----*/
 .contactos h2 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: "Roboto Slab", serif;
   font-weight: 800;
   margin: 1vw; }
@@ -302,8 +302,8 @@ header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border: 1px solid black;
   border-radius: 1vw;
-  width: 40%;
-  height: 90%;
+  width: 50vw;
+  height: 60vw;
   margin: 2vw;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
@@ -337,7 +337,7 @@ header {
     .contactos .globos form div textarea {
       border: 1px solid black;
       border-radius: 1vw;
-      width: 25vw;
+      width: 20vw;
       height: 10vw;
       padding: 0.5vw;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -478,34 +478,32 @@ header {
       font-size: 2vw; }
   .nuestra-his section .hist-nues {
     display: flex;
-    flex-direction: column; } }
-
-/*!------CONTACTOS------*/
-.contactos h2 {
-  font-size: 4vw; }
-
-.contactos .globos {
-  width: 70vw;
-  height: 95vw; }
-  .contactos .globos form div label {
-    font-size: 3vw; }
-  .contactos .globos form div input {
+    flex-direction: column; }
+  /*!------CONTACTOS------*/
+  .contactos h2 {
+    font-size: 4vw; }
+  .contactos .globos {
     width: 60vw;
-    height: 6vw; }
-  .contactos .globos form div h3 {
-    font-size: 3vw; }
-  .contactos .globos form div select {
-    font-size: 3vw;
-    width: 60vw;
-    height: 6vw; }
-  .contactos .globos form div textarea {
-    width: 60vw;
-    height: 20vw;
-    font-size: 3vw; }
-  .contactos .globos form div .botones {
-    width: 20vw;
-    height: 4vw;
-    font-size: 2.5vw; }
+    height: 90vw; }
+    .contactos .globos form div label {
+      font-size: 3vw; }
+    .contactos .globos form div input {
+      width: 50vw;
+      height: 6vw; }
+    .contactos .globos form div h3 {
+      font-size: 3vw; }
+    .contactos .globos form div select {
+      font-size: 3vw;
+      width: 50vw;
+      height: 6vw; }
+    .contactos .globos form div textarea {
+      width: 50vw;
+      height: 20vw;
+      font-size: 3vw; }
+    .contactos .globos form div .botones {
+      width: 18vw;
+      height: 4vw;
+      font-size: 2.5vw; } }
 
 @media screen and (max-width: 530px) {
   .barra-nav {
@@ -609,7 +607,7 @@ header {
     font-size: 4vw; }
   .contactos .globos {
     width: 70vw;
-    height: 95vw; }
+    height: 100vw; }
     .contactos .globos form div label {
       font-size: 3vw; }
     .contactos .globos form div input {
