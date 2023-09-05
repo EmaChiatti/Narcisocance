@@ -20,7 +20,7 @@ a{
     font-family: $font-fam-empr;
     font-size: nth($font-size, 2);
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 530px){
     .navbar-nav li .nav-link.active, .navbar-nav .nav-link.show{
         color: $color-letras-alt;
         font-family: $font-fam-empr;

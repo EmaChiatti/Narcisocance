@@ -130,34 +130,36 @@
     /*!------CONTACTOS------*/
     .contactos{
         h2{
-            font-size: nth($font-size, 8);
+            font-size: nth($font-size, 7);
         }
         .globos{
             width: 60vw;
             height: 90vw;
-            
             form{
                 div{
                     label{
-                        font-size: nth($font-size, 7);
+                        font-size: nth($font-size, 6);
                     }
                     input{
-                        width: 50vw;
-                        height: 6vw;
+                        width: 30vw;
+                        height: 3vw;
                     }
                     h3{
-                        font-size: nth($font-size, 7);
+                        font-size: nth($font-size, 6);
                     }
                     select{
-                        font-size: nth($font-size, 7);
-                        width: 50vw;
-                        height: 6vw;
+                        font-size: nth($font-size, 6);
+                        width: 30vw;
+                        height: 3vw;
                     }
                     textarea{
-                        width: 50vw;
+                        width: 30vw;
                         height: 20vw;
-                        font-size: nth($font-size, 7);
+                        font-size: nth($font-size, 6);
                     }
+                }
+                .dis-bot{
+                    display: flex;
                     .botones{
                         width: 18vw;
                         height: 4vw;
@@ -195,29 +197,29 @@
     }
     /*!------IND------*/
     main{
-    .carousel{
-        display: none;
-    }
-    .rubros{
-        display: map-get($distrib, display);
-        flex-direction: map-get($distrib, flex-dir);
-        justify-content: map-get($distrib, just-cont);
-        align-items: map-get($distrib, align-i);
-        div{
-            margin: 0.25vw;
-            width: 75vw;
-            height: 20vw;
-            box-shadow: none;
-            h2{
-                font-size: nth($font-size, 9);
-            }
-            a{
-                p{
-                    font-size: nth($font-size, 6);
+        .carousel{
+            display: none;
+        }
+        .rubros{
+            display: map-get($distrib, display);
+            flex-direction: map-get($distrib, flex-dir);
+            justify-content: map-get($distrib, just-cont);
+            align-items: map-get($distrib, align-i);
+            div{
+                margin: 0.25vw;
+                width: 75vw;
+                height: 20vw;
+                box-shadow: none;
+                h2{
+                    font-size: nth($font-size, 9);
                 }
-            }
-        }   
-    }
+                a{
+                    p{
+                        font-size: nth($font-size, 6);
+                    }
+                }
+            }   
+        }
         .productos-des{
             h2{
                 text-align: center;
@@ -247,74 +249,43 @@
                 }
             }
         }
-    .alianzas{
-        display: none;
-    }
-    .ferreteria{
-    width: 100%;
-        display: flex;
-        flex-direction: column;
-        .prod-mat{
-            display: map-get($distrib, display);
-            flex-direction: map-get($distrib, flex-dir);
-            justify-content: map-get($distrib, just-cont);
-            align-items: map-get($distrib, align-i);
-            img{
-            width: 60%;
-            height: 70%;
-                border-radius: 1vw;
-                object-fit: contain;
-            }
+        .alianzas{
+            display: none;
         }
-    }
-    .agroindustria{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        .prod-agro{
-            display: map-get($distrib, display);
-            flex-direction: map-get($distrib, flex-dir);
-            justify-content: map-get($distrib, just-cont);
-            align-items: map-get($distrib, align-i);
-            img{
-                width: 60%;
-                height: 70%;
-                border-radius: 1vw;
-                object-fit: cover;
-            }
-        }
-    }
-}
-/*!------NOSOTROS------*/
-        h2{
-            font-size: nth($font-size, 8);
-        }
-        section{
-            h3{
-                font-size: nth($font-size, 8);
-            }
-            div{
-                p{
-                    font-size: nth($font-size, 7);
-                }
-                .hist-ferr{
-                    display: flex;
-                    flex-direction: column-reverse;
-                }
-                .hist-nues{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-            .hist-prem{
-                display: flex;
-                flex-direction: column;
-                p{
-                    font-size: nth($font-size, 7);
+        .ferreteria{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .prod-mat{
+                display: map-get($distrib, display);
+                flex-direction: map-get($distrib, flex-dir);
+                justify-content: map-get($distrib, just-cont);
+                align-items: map-get($distrib, align-i);
+                img{
+                    width: 60%;
+                    height: 70%;
+                    border-radius: 1vw;
+                    object-fit: contain;
                 }
             }
         }
-        /*!------CONTACTOS------*/
+        .agroindustria{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .prod-agro{
+                display: map-get($distrib, display);
+                flex-direction: map-get($distrib, flex-dir);
+                justify-content: map-get($distrib, just-cont);
+                align-items: map-get($distrib, align-i);
+                img{
+                    width: 60%;
+                    height: 70%;
+                    border-radius: 1vw;
+                    object-fit: cover;
+                }
+            }
+        }
         .contactos{
             h2{
                 font-size: nth($font-size, 8);
@@ -344,6 +315,9 @@
                             height: 20vw;
                             font-size: nth($font-size, 7);
                         }
+                    }
+                    .dis-bot{
+                        display:flex;
                         .botones{
                             width: 20vw;
                             height: 4vw;
@@ -353,7 +327,38 @@
                 }
             }
         }
-    /*!------FOOTER------*/
+    }
+    //!---NOSOTROS---/
+    .nuestra-his{
+        h2{
+            font-size: nth($font-size, 8);
+        }
+        section{
+            h3{
+                font-size: nth($font-size, 8);
+            }
+            div{
+                p{
+                    font-size: nth($font-size, 6);
+                }
+                .hist-ferr{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .hist-nues{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .hist-prem{
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: nth($font-size, 7);
+                }
+            }
+        }
+    }
     .pie-grid{
         display: flex;
         flex-direction: row;
